@@ -1,0 +1,114 @@
+/* ===== RESET Y ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #88bcf1;
+    padding-bottom: 60px; /* Ajuste para el footer fijo */
+}
+
+/* ===== BARRA DE NAVEGACIÓN ===== */
+.navbar {
+    background-color: #007bff; /* Azul Bootstrap (cambiar a tu color) */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(237, 237, 248) !important; /* Color texto logo */
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+        position: absolute;
+        width: 90px; /* Ajusta el tamaño */
+        height: auto;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    color: red;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-link {
+    color: rgba(255, 237, 237, 0.8) !important;
+    font-size: 20px;
+    margin: 10px;
+    transition: color 0.3s;
+    text-align: right;
+}
+
+.nav-link:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(135deg, #86b0e8 0%, #2575fc 100%); /* Degradado (cambiar) */
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0.5,0.3);
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2.2rem;
+    opacity: 0.9;
+}
+
+.btn-buscar {
+    display: inline-block;
+    background-color: #ff6b6b; /* Color botón (cambiar) */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.btn-buscar:hover {
+    background-color: #8059ff; /* Color hover (cambiar) */
+    transform: translateY(+2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== FOOTER ===== */
+.page-footer {
+    background-color: #343a40; /* Color footer (cambiar) */
+    width: 100%;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+}
+/* ===== MEDIA QUERIES (RESPONSIVE) ===== */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
